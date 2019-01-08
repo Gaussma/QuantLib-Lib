@@ -1,81 +1,5 @@
 
 
-QuantLib: the free/open-source library for quantitative finance
-===============================================================
-
-[![Download](https://api.bintray.com/packages/quantlib/releases/QuantLib/images/download.svg)](https://bintray.com/quantlib/releases/QuantLib/_latestVersion)
-[![Build Status](https://travis-ci.org/lballabio/QuantLib.svg?branch=master)](https://travis-ci.org/lballabio/QuantLib)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b4bc1058db994f24aa931b119a885eea)](https://www.codacy.com/app/lballabio/QuantLib)
-[![codecov](https://codecov.io/gh/lballabio/QuantLib/branch/master/graph/badge.svg)](https://codecov.io/gh/lballabio/QuantLib)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lballabio/QuantLib.svg)](http://isitmaintained.com/project/lballabio/QuantLib)
-
----
-
-
-Jan 7 2019  
-
-The QuantLib project (<http://quantlib.org>) is aimed at providing a
-comprehensive software framework for quantitative finance. QuantLib is
-a free/open-source library for modeling, trading, and risk management
-in real-life.
-
-QuantLib is Non-Copylefted Free Software and OSI Certified Open Source
-Software.
-
-
-Download and usage
-------------------
-
-QuantLib can be downloaded from <http://quantlib.org/download.shtml>;
-installation instructions are available at
-<http://quantlib.org/install.shtml> for most platforms.
-
-Documentation for the usage and the design of the QuantLib library is
-available from <http://quantlib.org/docs.shtml>.
-
-A list of changes for each past versions of the library can be
-browsed at <http://quantlib.org/reference/history.html>.
-
-
-Questions and feedback
-----------------------
-
-The preferred channel for questions (and the one with the largest
-audience) is the quantlib-users mailing list.  Instructions for
-subscribing are at <http://quantlib.org/mailinglists.shtml>.
-
-Bugs can be reported as a GitHub issue at
-<https://github.com/lballabio/QuantLib/issues>; if you have a patch
-available, you can open a pull request instead (see "Contributing"
-below).
-
-
-Contributing
-------------
-
-The preferred way to contribute is through pull requests on GitHub.
-Get a GitHub account if you don't have it already and clone the
-repository at <https://github.com/lballabio/QuantLib> with the "Fork"
-button in the top right corner of the page. Check out your clone to
-your machine, code away, push your changes to your clone and submit a
-pull request; instructions are available at
-<https://help.github.com/articles/fork-a-repo>.
-
-In case you need them, more detailed instructions for creating pull
-requests are at
-<https://help.github.com/articles/using-pull-requests>, and a basic
-guide to GitHub is at
-<https://guides.github.com/activities/hello-world/>.  GitHub also
-provides interactive learning at <https://lab.github.com/>.
-
-It's likely that we won't merge your code right away, and we'll ask
-for some changes instead. Don't be discouraged! That's normal; the
-library is complex, and thus it might take some time to become
-familiar with it and to use it in an idiomatic way.
-
-We're looking forward to your contributions.
-
-
 Jan 9  .
 
 1. Today I download the QuantLib again.  
@@ -125,7 +49,11 @@ DO NOT FORGET  TO ADD THE QUANTLIB AS REFERENCE !
 
 Currently, the test can not shown !  
 
+
+
 ***************************
+
+File->add->New project  (Click a test project first ! )
 
 Step by step instruction to create testsuite18  
 1. create the project . 
@@ -199,9 +127,11 @@ Linker: Additional Library Directories :
  Right Click the project testsuite18, --> "Project Only"
 -->"Build Only " !  
 
+
+TO fix why no test is showned !  
 Tricks 1: 
  After Build success, if the tests has not shown in Text Explore, restart the Visual Studio 2017 ! This is the trick ! 
- Tricks 2: remove the testsuite18.cpp and pch.cpp file from the project menu !  
+ Tricks 2: remove the testsuite18.cpp and pch.cpp file from the project menu !  Very important !  
 (make sure an required step done ! )
  Trick 3:  
  Configuration Properties -> General -> 
@@ -210,20 +140,51 @@ Tricks 1:
 
 
 
-$(SolutionDir)$(Platform)\$(Configuration)\
+$(SolutionDir)$(Platform)\$(Configuration)\-->\bin 
+
+
+//on the remote side ! 
+
+ Unknown compiler version - please run the configure tests and report the results
+1753
+  timegrid.cpp
+1754
+  Unknown compiler version - please run the configure tests and report the results
+1755
+  Make build directory
+1756
+  QuantLib.vcxproj -> C:\projects\quantlib-lib\.\lib\QuantLib-vc141-x64-mt.lib
+1757
+Discovering tests...OK
+1758
+Build success
 
 
 
 
 
 
+Jan 8 , 2019 
+
+1. 
+ Set the enviroment variable $(BOOST_ROOT), $(BOOST_LIBRARYDIR), $(QuantLib1) to user Enviroment, not system variable in local. 
+
+2. replace the absolute path with Enviroment variable $(QuantLib1) in testsuite12. ()
+
+After replacement, utlities.hpp can not find ql/ directories. 
+After we restart the VS 2017 . Built success !  
+
+Track: After set the enviroment variable and use enviroment variable in the VS , we need to restart the Visual Studio !  
 
 
 
+1. The output of QuatnLib Library is .\lib\
 
 
 
+For StaticLibrary :  
+We update the Configuration Properties->General->OutputDirectory 
+
+$(SolutionDir)$(Platform)\$(Configuration)\  to \bin 
 
 
-
-*
