@@ -188,3 +188,130 @@ We update the Configuration Properties->General->OutputDirectory
 $(SolutionDir)$(Platform)\$(Configuration)\  to \bin 
 
 
+
+
+
+QuantLib.vcxproj -> C:\projects\quantlib-lib\.\lib\QuantLib-vc141-x64-mt.lib
+
+
+
+***********
+
+Windows cmd prompt: (You could try the below command directly in windows cmd if you are not comfortable with grep, rm -rf, find, xargs etc., commands in git bash )
+Delete .git recursively inside the project folder by the following command in cmd: 
+FOR /F "tokens=*" %G IN ('DIR /B /AD /S .git') DO RMDIR /S /Q "%G"
+
+
+***********
+
+
+
+Now I create a new solution:
+
+
+VC++ Directory  Inclucde Directories : $(MathLib) 
+                Reference Directories : $(MathLib)/lib
+
+C++ : BOOST_ROOT  
+
+
+
+
+Multi-threaded DLL (/MD)
+
+
+
+
+Build a C++ library , linking it, then 
+another program call this library.  
+
+
+
+utilities.hpp contains 
+
+
+#include <ql/instruments/payoffs.hpp>
+   #include <ql/option.hpp>
+      #include <ql/instrument.hpp>
+         (#include <ql/patterns/lazyobject.hpp>
+         	[#include <ql/patterns/observable.hpp>]
+         	 {#include <ql/errors.hpp>
+         	 	  (#include <ql/qldefines.hpp>-none 
+                   #include <ql/shared_ptr.hpp>
+                       [<ql/qldefines.hpp>]-meet)
+               #include <ql/types.hpp>
+                  (#include <ql/qldefines.hpp> meet
+               	  )
+               #include <ql/patterns/singleton.hpp>
+                  (#include <ql/qldefines.hpp>-meet)
+
+               #include <ql/shared_ptr.hpp> -meet}
+          #include <ql/pricingengine.hpp>
+            [#include <ql/patterns/observable.hpp>]-meet
+          #include <ql/utilities/null.hpp>
+            [#include <ql/types.hpp>]-meet 
+          #include <ql/time/date.hpp>)
+            [#include <ql/time/period.hpp>
+                  {#include <ql/time/frequency.hpp>
+                  	(#include <ql/qldefines.hpp>)-meet
+                   #include <ql/time/timeunit.hpp>
+                    (#include <ql/qldefines.hpp>)-meet
+                   #include <ql/types.hpp>-meet}
+             #include <ql/time/weekday.hpp>
+                 (#include <ql/qldefines.hpp>-meet)
+              #include <ql/utilities/null.hpp>-meet]
+   #include <ql/payoff.hpp>
+      #include <ql/types.hpp>
+         (#include <ql/qldefines.hpp>)-meet
+      #include <ql/patterns/visitor.hpp>
+         (#include <ql/qldefines.hpp>)-meet
+      #include <ql/errors.hpp>
+          (#include <ql/qldefines.hpp> - meet
+           #include <ql/shared_ptr.hpp>)-meet 
+#include <ql/exercise.hpp>
+      {#include <ql/time/date.hpp> -meet}
+#include <ql/termstructures/yieldtermstructure.hpp>
+      { #include <ql/termstructure.hpp>-solved
+      	    [#include <ql/time/calendar.hpp>-solved. 
+      	       (#include <ql/errors.hpp>-meet 
+                  #include <ql/time/date.hpp>-meet 
+                 #include <ql/time/businessdayconvention.hpp>
+                  {#include <ql/qldefines.hpp> -meet }
+                  #include <ql/shared_ptr.hpp>-meet )
+             #include <ql/time/daycounter.hpp> solved/
+                (#include <ql/time/date.hpp> meet 
+                 #include <ql/errors.hpp> meet )
+            #include <ql/settings.hpp> solved
+                (#include <ql/patterns/singleton.hpp> meet
+                #include <ql/time/date.hpp> meet 
+               #include <ql/utilities/observablevalue.hpp>
+                {#include <ql/patterns/observable.hpp> meet})
+            #include <ql/handle.hpp> solved
+                (<ql/patterns/observable.hpp>-meet)
+            #include <ql/math/interpolations/extrapolation.hpp>
+             (<ql/qldefines.hpp> meet)
+             #include <ql/utilities/null.hpp> meet]
+        #include <ql/interestrate.hpp> solved
+            [#include <ql/compounding.hpp>
+              (#include <ql/qldefines.hpp> meet)
+             #include <ql/time/daycounters/actual365fixed.hpp>
+             (#include <ql/time/daycounter.hpp> meet)
+             ]
+        #include <ql/quote.hpp> solved
+           [#include <ql/handle.hpp> meet
+            #include <ql/errors.hpp> meet 
+            #include <ql/utilities/null.hpp> meet]}
+    #include <ql/termstructures/volatility/equityfx/blackvoltermstructure.hpp> solved
+     {#include <ql/termstructures/voltermstructure.hpp>
+     	[#include <ql/termstructure.hpp> meet ]
+      #include <ql/patterns/visitor.hpp>solved. 
+       [#include <ql/qldefines.hpp> meet]}
+#include <ql/quote.hpp>-meet 
+#include <ql/patterns/observable.hpp> -meet 
+#include <ql/time/daycounters/actual365fixed.hpp>-meet 
+
+
+
+
+
+
