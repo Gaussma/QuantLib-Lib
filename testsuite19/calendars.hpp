@@ -37,7 +37,7 @@ class CalendarTest {
     static void testUKExchange();
     static void testUKMetals();
 
-//    static void testGermanySettlement();
+  //  static void testGermanySettlement();
     static void testGermanyFrankfurt();
     static void testGermanyXetra();
     static void testGermanyEurex();

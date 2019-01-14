@@ -227,12 +227,27 @@ another program call this library.
 
 
 
+
+3 hpp files  
+
+calendar.hpp
+speedlevel.hpp 
+utilities.hpp  BIG 
+
+2 cpp files 
+
+calendar.cpp
+
+quantlibtestsuite.cpp
+
+
+
 utilities.hpp contains 
 
 
 #include <ql/instruments/payoffs.hpp>
-   #include <ql/option.hpp>
-      #include <ql/instrument.hpp>
+   #include <ql/option.hpp>solved. 
+      #include <ql/instrument.hpp>solved
          (#include <ql/patterns/lazyobject.hpp>
          	[#include <ql/patterns/observable.hpp>]
          	 {#include <ql/errors.hpp>
@@ -315,3 +330,81 @@ utilities.hpp contains
 
 
 
+
+
+quantlibtestsuite.cpp {
+#include <ql/types.hpp> meet
+#include <ql/settings.hpp> meet
+#include <ql/utilities/dataparsers.hpp>{#include <ql/time/date.hpp> meet}
+#include <ql/version.hpp>{#include <ql/qldefines.hpp>}
+}
+
+
+
+
+calendars.cpp {
+	
+#include "calendars.hpp" -none 
+#include "utilities.hpp"-meet 
+#include <ql/time/calendar.hpp> solved. 
+#include <ql/time/calendars/brazil.hpp>
+     {#include <ql/time/calendar.hpp> meet}
+#include <ql/time/calendars/china.hpp>
+{#include <ql/time/calendar.hpp>} meet 
+#include <ql/time/calendars/germany.hpp>
+{#include <ql/time/calendar.hpp>} meet 
+#include <ql/time/calendars/italy.hpp>
+#include <ql/time/calendars/russia.hpp>
+#include <ql/time/calendars/target.hpp>
+#include <ql/time/calendars/unitedkingdom.hpp>
+#include <ql/time/calendars/unitedstates.hpp>
+#include <ql/time/calendars/japan.hpp>
+#include <ql/time/calendars/southkorea.hpp>
+#include <ql/time/calendars/jointcalendar.hpp>
+#include <ql/time/calendars/bespokecalendar.hpp>
+#include <ql/errors.hpp> meet 
+#include <fstream>
+}
+
+original size of lib (release, x64) is 459MB 
+
+                      after Deletion , lib size 
+/cashflows (Delete)        445 MB 
+/currencies (Delete)       439 MB 
+/experimental (Delete)     304 MB 
+/indexes (Delete)          291 MB 
+/instruments
+/legacy (Delete)           287 MB 
+/math
+
+/methods (Delete)          257 MB 
+/patterns
+/pricingengines (may bedelete)   194MB 
+/processes (Delete)         186 MB 
+/models                     130 MB   
+/quotes ( may beDelete)
+/termstructures
+/time
+/utilities 
+
+
+Step 1 : Delete folder Cashflow ,after delete, 
+ current lib size is  445 MB 
+  Build again, testsuite can show test and run test ! 
+
+Step 2: Delete Currencies folder on QuantLib 
+    lib sie 439 MB  
+
+Step 3: 
+
+
+
+gd - means debug !
+
+sgd - means static debug 
+x64 means x64 platform 
+
+x86 usually is smaller than x64 !  
+
+
+Now the compile time is 3 mintues !  

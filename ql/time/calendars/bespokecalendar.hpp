@@ -26,6 +26,7 @@
 
 #include <ql/time/calendar.hpp>
 
+
 namespace QuantLib {
 
     //! Bespoke calendar
