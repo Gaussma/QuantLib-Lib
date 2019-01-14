@@ -240,9 +240,31 @@ calendar.cpp
 
 quantlibtestsuite.cpp
 
+Keep ql/* files: 
+
+
+
+ql/option.hpp
+ql/instrument.hpp
+ql/errors.hpp
+ql/qldefines.hpp
+ql/shared_ptr.hpp
+ql/types.hpp
+ql/pricingengine.hpp
+ql/payoff.hpp
+ql/exercise.hpp
+ql/settings.hpp
+ql/handle.hpp
+ql/termstructure.hpp
+<ql/interestrate.hpp>
+ql/version.hpp
+
+
+
 
 
 utilities.hpp contains 
+
 
 
 #include <ql/instruments/payoffs.hpp>
@@ -408,3 +430,27 @@ x86 usually is smaller than x64 !
 
 
 Now the compile time is 3 mintues !  
+
+QuantLib.vcxproj -> c:\projects\xiaoyao\.\lib\QuantLib-vc141-x64-mt.lib
+
+
+
+On Jan 14 
+
+https://ci.appveyor.com/project/XiaoyaoMa/quantlib-lib    1.0.23    https://github.com/Gaussma/QuantLib-Lib   This version , c:\projects\xiaoyao\lib\QuantLib-vc141-x64-mt.lib built on appveyor, and then build testsuite  successfully.    Unknown compiler version - please run the configure tests and report the results
+84 Make build directory
+85 QuantLib.vcxproj -> c:\projects\xiaoyao\lib\QuantLib-vc141-x64-mt.lib
+86 calendars.cpp
+87 Unknown compiler version - please run the configure tests and report the results
+88 quantlibtestsuite.cpp
+89 Unknown compiler version - please run the configure tests and report the results
+90 Generating code
+91 All 1087 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+92 Finished generating code
+93 testsuite19.vcxproj -> c:\projects\xiaoyao\testsuite19\bin\testsuite19.exe
+94Discovering tests...OK
+95Build success
+
+
+
+
