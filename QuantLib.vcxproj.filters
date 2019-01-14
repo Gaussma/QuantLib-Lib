@@ -19,29 +19,8 @@
     <Filter Include="termstructures\volatility">
       <UniqueIdentifier>{0bf280b6-d895-40ff-b988-65ad2880c1ff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="termstructures\volatility\capfloor">
-      <UniqueIdentifier>{abef9afa-8a52-4aa4-919f-9783ff8f1007}</UniqueIdentifier>
-    </Filter>
     <Filter Include="termstructures\volatility\equityfx">
       <UniqueIdentifier>{be944554-fbaf-47f3-beee-c441a7e8f1ce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\volatility\optionlet">
-      <UniqueIdentifier>{88309f41-e501-4c74-90ab-22e8cca7f0ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\volatility\swaption">
-      <UniqueIdentifier>{f5650187-c37a-4a98-8a24-8836f0f11324}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\volatility\inflation">
-      <UniqueIdentifier>{159ec8ea-6958-4f60-a716-62915d2cef63}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\yield">
-      <UniqueIdentifier>{539e9341-cf4e-499c-9828-cf406c5c7e4b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\inflation">
-      <UniqueIdentifier>{e31e697b-bed3-4d0c-b1e0-15747249a105}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="termstructures\credit">
-      <UniqueIdentifier>{af9827f7-274b-43da-a2a2-40fc4c80c194}</UniqueIdentifier>
     </Filter>
     <Filter Include="utilities">
       <UniqueIdentifier>{25fb83ed-1731-4cd6-aa3a-d8027a0eca9f}</UniqueIdentifier>
@@ -55,9 +34,6 @@
     <Filter Include="time\daycounters">
       <UniqueIdentifier>{3346f5d8-7c2e-4444-bca0-837abbec52da}</UniqueIdentifier>
     </Filter>
-    <Filter Include="quotes">
-      <UniqueIdentifier>{13902db1-1f30-4431-842c-2536d95658e8}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ql\instruments\all.hpp">
@@ -69,70 +45,7 @@
     <ClInclude Include="ql\instruments\zerocouponinflationswap.hpp">
       <Filter>instruments</Filter>
     </ClInclude>
-    <ClInclude Include="ql\math\all.hpp">
-      <Filter>math</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\abcdinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\all.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\backwardflatinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\backwardflatlinearinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\bicubicsplineinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\bilinearinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\convexmonotoneinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\cubicinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
     <ClInclude Include="ql\math\interpolations\extrapolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\flatextrapolation2d.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\forwardflatinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\interpolation2d.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\kernelinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\kernelinterpolation2d.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\linearinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\lagrangeinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\loginterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\mixedinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\multicubicspline.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\sabrinterpolation.hpp">
-      <Filter>math\interpolations</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\math\interpolations\xabrinterpolation.hpp">
       <Filter>math\interpolations</Filter>
     </ClInclude>
     <ClInclude Include="ql\patterns\all.hpp">
@@ -159,317 +72,14 @@
     <ClInclude Include="ql\termstructures\all.hpp">
       <Filter>termstructures</Filter>
     </ClInclude>
-    <ClInclude Include="ql\termstructures\bootstraperror.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\bootstraphelper.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\defaulttermstructure.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflationtermstructure.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\interpolatedcurve.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\iterativebootstrap.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\localbootstrap.hpp">
-      <Filter>termstructures</Filter>
-    </ClInclude>
     <ClInclude Include="ql\termstructures\voltermstructure.hpp">
       <Filter>termstructures</Filter>
     </ClInclude>
     <ClInclude Include="ql\termstructures\yieldtermstructure.hpp">
       <Filter>termstructures</Filter>
     </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\abcd.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\abcdcalibration.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\all.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\flatsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\interpolatedsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\sabr.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\sabrinterpolatedsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\sabrsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\smilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\spreadedsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\volatilitytype.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\capfloor\all.hpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\capfloor\capfloortermvolatilitystructure.hpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\capfloor\capfloortermvolcurve.hpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\capfloor\capfloortermvolsurface.hpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\capfloor\constantcapfloortermvol.hpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\all.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\andreasenhugelocalvoladapter.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\andreasenhugevolatilityadapter.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\andreasenhugevolatilityinterpl.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\blackconstantvol.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\blackvariancecurve.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\blackvariancesurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
     <ClInclude Include="ql\termstructures\volatility\equityfx\blackvoltermstructure.hpp">
       <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\impliedvoltermstructure.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\localconstantvol.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\localvolcurve.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\localvolsurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\localvoltermstructure.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\all.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\capletvariancecurve.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\constantoptionletvol.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\optionletstripper.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\optionletstripper1.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\optionletstripper2.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\optionletvolatilitystructure.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\spreadedoptionletvol.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\strippedoptionlet.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\strippedoptionletadapter.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\optionlet\strippedoptionletbase.hpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\all.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\cmsmarket.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\cmsmarketcalibration.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\spreadedswaptionvol.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionconstantvol.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvolcube.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvolcube1.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvolcube2.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvoldiscrete.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvolmatrix.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\swaptionvolstructure.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\inflation\all.hpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\inflation\constantcpivolatility.hpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\inflation\cpivolatilitystructure.hpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\inflation\yoyinflationoptionletvolatilitystructure.hpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\all.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\bondhelpers.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\bootstraptraits.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\compositezeroyieldstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\discountcurve.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\drifttermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\fittedbonddiscountcurve.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\flatforward.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\forwardcurve.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\forwardspreadedtermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\forwardstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\impliedtermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\nonlinearfittingmethods.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\oisratehelper.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\piecewiseyieldcurve.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\piecewisezerospreadedtermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\quantotermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\ratehelpers.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\zerocurve.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\zerospreadedtermstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\yield\zeroyieldstructure.hpp">
-      <Filter>termstructures\yield</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\all.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\inflationhelpers.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\inflationtraits.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\interpolatedyoyinflationcurve.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\interpolatedzeroinflationcurve.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\piecewiseyoyinflationcurve.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\piecewisezeroinflationcurve.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\inflation\seasonality.hpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\all.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\defaultdensitystructure.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\defaultprobabilityhelpers.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\flathazardrate.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\hazardratestructure.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\interpolateddefaultdensitycurve.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\interpolatedhazardratecurve.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\interpolatedsurvivalprobabilitycurve.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\piecewisedefaultcurve.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\probabilitytraits.hpp">
-      <Filter>termstructures\credit</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\credit\survivalprobabilitystructure.hpp">
-      <Filter>termstructures\credit</Filter>
     </ClInclude>
     <ClInclude Include="ql\utilities\all.hpp">
       <Filter>utilities</Filter>
@@ -546,12 +156,6 @@
     <ClInclude Include="ql\time\calendars\all.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\calendars\argentina.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\australia.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\calendars\bespokecalendar.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
@@ -561,40 +165,10 @@
     <ClInclude Include="ql\time\calendars\brazil.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\calendars\canada.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\calendars\china.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\calendars\czechrepublic.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\denmark.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\finland.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\calendars\germany.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\hongkong.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\hungary.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\iceland.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\india.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\indonesia.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\israel.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
     <ClInclude Include="ql\time\calendars\italy.hpp">
@@ -606,61 +180,13 @@
     <ClInclude Include="ql\time\calendars\jointcalendar.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\calendars\mexico.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\newzealand.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\norway.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\nullcalendar.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\poland.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\romania.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\calendars\russia.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\saudiarabia.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\singapore.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\slovakia.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\southafrica.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
     <ClInclude Include="ql\time\calendars\southkorea.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\calendars\sweden.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\switzerland.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\taiwan.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\calendars\target.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\thailand.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\turkey.hpp">
-      <Filter>time\calendars</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\calendars\ukraine.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
     <ClInclude Include="ql\time\calendars\unitedkingdom.hpp">
@@ -672,88 +198,24 @@
     <ClInclude Include="ql\time\calendars\weekendsonly.hpp">
       <Filter>time\calendars</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\daycounters\actual360.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
     <ClInclude Include="ql\time\daycounters\actual365fixed.hpp">
       <Filter>time\daycounters</Filter>
     </ClInclude>
-    <ClInclude Include="ql\time\daycounters\actual365nl.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\actualactual.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\all.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\business252.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\one.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\simpledaycounter.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\time\daycounters\thirty360.hpp">
-      <Filter>time\daycounters</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\atmadjustedsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\atmsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\gaussian1dsmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\swaption\gaussian1dswaptionvolatility.hpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\kahalesmilesection.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\smilesectionutils.hpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\auto_link.hpp" />
-    <ClInclude Include="ql\auto_ptr.hpp" />
-    <ClInclude Include="ql\cashflow.hpp" />
-    <ClInclude Include="ql\compounding.hpp" />
-    <ClInclude Include="ql\config.ansi.hpp" />
-    <ClInclude Include="ql\config.mingw.hpp" />
-    <ClInclude Include="ql\config.msvc.hpp" />
-    <ClInclude Include="ql\config.sun.hpp" />
-    <ClInclude Include="ql\currency.hpp" />
-    <ClInclude Include="ql\default.hpp" />
-    <ClInclude Include="ql\discretizedasset.hpp" />
     <ClInclude Include="ql\errors.hpp" />
-    <ClInclude Include="ql\event.hpp" />
-    <ClInclude Include="ql\exchangerate.hpp" />
     <ClInclude Include="ql\exercise.hpp" />
-    <ClInclude Include="ql\rebatedexercise.hpp" />
     <ClInclude Include="ql\grid.hpp" />
     <ClInclude Include="ql\handle.hpp" />
-    <ClInclude Include="ql\index.hpp" />
     <ClInclude Include="ql\instrument.hpp" />
     <ClInclude Include="ql\interestrate.hpp" />
-    <ClInclude Include="ql\mathconstants.hpp" />
-    <ClInclude Include="ql\money.hpp" />
-    <ClInclude Include="ql\numericalmethod.hpp" />
     <ClInclude Include="ql\option.hpp" />
     <ClInclude Include="ql\payoff.hpp" />
-    <ClInclude Include="ql\position.hpp" />
-    <ClInclude Include="ql\prices.hpp" />
     <ClInclude Include="ql\pricingengine.hpp" />
     <ClInclude Include="ql\qldefines.hpp" />
     <ClInclude Include="ql\quantlib.hpp" />
     <ClInclude Include="ql\quote.hpp" />
     <ClInclude Include="ql\settings.hpp" />
     <ClInclude Include="ql\shared_ptr.hpp" />
-    <ClInclude Include="ql\stochasticprocess.hpp" />
     <ClInclude Include="ql\termstructure.hpp" />
-    <ClInclude Include="ql\timegrid.hpp" />
     <ClInclude Include="ql\timeseries.hpp" />
     <ClInclude Include="ql\types.hpp" />
     <ClInclude Include="ql\userconfig.hpp" />
@@ -762,48 +224,6 @@
     <ClInclude Include="ql\time\asx.hpp">
       <Filter>time</Filter>
     </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\fixedlocalvolsurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\noexceptlocalvolsurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\gridmodellocalvolsurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\termstructures\volatility\equityfx\hestonblackvolsurface.hpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\all.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\compositequote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\derivedquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\eurodollarfuturesquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\forwardswapquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\forwardvaluequote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\futuresconvadjustmentquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\impliedstddevquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\lastfixingquote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\quotes\simplequote.hpp">
-      <Filter>quotes</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ql\instruments\payoffs.cpp">
@@ -811,183 +231,6 @@
     </ClCompile>
     <ClCompile Include="ql\instruments\zerocouponinflationswap.cpp">
       <Filter>instruments</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\defaulttermstructure.cpp">
-      <Filter>termstructures</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\inflationtermstructure.cpp">
-      <Filter>termstructures</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\voltermstructure.cpp">
-      <Filter>termstructures</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yieldtermstructure.cpp">
-      <Filter>termstructures</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\abcd.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\abcdcalibration.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\flatsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\sabr.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\sabrinterpolatedsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\sabrsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\smilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\spreadedsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\capfloor\capfloortermvolatilitystructure.cpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\capfloor\capfloortermvolcurve.cpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\capfloor\capfloortermvolsurface.cpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\capfloor\constantcapfloortermvol.cpp">
-      <Filter>termstructures\volatility\capfloor</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\andreasenhugelocalvoladapter.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\andreasenhugevolatilityadapter.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\andreasenhugevolatilityinterpl.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\blackvariancecurve.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\blackvariancesurface.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\blackvoltermstructure.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\localvolsurface.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\localvoltermstructure.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\constantoptionletvol.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\optionletstripper.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\optionletstripper1.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\optionletstripper2.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\optionletvolatilitystructure.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\spreadedoptionletvol.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\strippedoptionlet.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\optionlet\strippedoptionletadapter.cpp">
-      <Filter>termstructures\volatility\optionlet</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\cmsmarket.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\cmsmarketcalibration.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\spreadedswaptionvol.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionconstantvol.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionvolcube.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionvolcube2.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionvoldiscrete.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionvolmatrix.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\swaptionvolstructure.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\inflation\constantcpivolatility.cpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\inflation\cpivolatilitystructure.cpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\inflation\yoyinflationoptionletvolatilitystructure.cpp">
-      <Filter>termstructures\volatility\inflation</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\bondhelpers.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\fittedbonddiscountcurve.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\flatforward.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\forwardstructure.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\nonlinearfittingmethods.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\oisratehelper.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\ratehelpers.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\yield\zeroyieldstructure.cpp">
-      <Filter>termstructures\yield</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\inflation\inflationhelpers.cpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\inflation\seasonality.cpp">
-      <Filter>termstructures\inflation</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\credit\defaultdensitystructure.cpp">
-      <Filter>termstructures\credit</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\credit\defaultprobabilityhelpers.cpp">
-      <Filter>termstructures\credit</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\credit\flathazardrate.cpp">
-      <Filter>termstructures\credit</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\credit\hazardratestructure.cpp">
-      <Filter>termstructures\credit</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\credit\survivalprobabilitystructure.cpp">
-      <Filter>termstructures\credit</Filter>
     </ClCompile>
     <ClCompile Include="ql\utilities\dataformatters.cpp">
       <Filter>utilities</Filter>
@@ -1031,55 +274,16 @@
     <ClCompile Include="ql\time\weekday.cpp">
       <Filter>time</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\calendars\argentina.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\australia.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
     <ClCompile Include="ql\time\calendars\bespokecalendar.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
     <ClCompile Include="ql\time\calendars\botswana.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\calendars\brazil.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\canada.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
     <ClCompile Include="ql\time\calendars\china.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\calendars\czechrepublic.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\denmark.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\finland.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
     <ClCompile Include="ql\time\calendars\germany.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\hongkong.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\hungary.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\iceland.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\india.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\indonesia.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\israel.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
     <ClCompile Include="ql\time\calendars\italy.cpp">
@@ -1091,58 +295,13 @@
     <ClCompile Include="ql\time\calendars\jointcalendar.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\calendars\mexico.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\newzealand.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\norway.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\poland.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\romania.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
     <ClCompile Include="ql\time\calendars\russia.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\saudiarabia.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\singapore.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\slovakia.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\southafrica.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
     <ClCompile Include="ql\time\calendars\southkorea.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\calendars\sweden.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\switzerland.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\taiwan.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
     <ClCompile Include="ql\time\calendars\target.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\thailand.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\turkey.cpp">
-      <Filter>time\calendars</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\calendars\ukraine.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
     <ClCompile Include="ql\time\calendars\unitedkingdom.cpp">
@@ -1154,64 +313,12 @@
     <ClCompile Include="ql\time\calendars\weekendsonly.cpp">
       <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\time\daycounters\actualactual.cpp">
-      <Filter>time\daycounters</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\daycounters\business252.cpp">
-      <Filter>time\daycounters</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\daycounters\simpledaycounter.cpp">
-      <Filter>time\daycounters</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\time\daycounters\thirty360.cpp">
-      <Filter>time\daycounters</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\atmadjustedsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\atmsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\gaussian1dsmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\swaption\gaussian1dswaptionvolatility.cpp">
-      <Filter>termstructures\volatility\swaption</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\kahalesmilesection.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\smilesectionutils.cpp">
-      <Filter>termstructures\volatility</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflow.cpp" />
-    <ClCompile Include="ql\currency.cpp" />
-    <ClCompile Include="ql\discretizedasset.cpp" />
-    <ClCompile Include="ql\errors.cpp" />
-    <ClCompile Include="ql\event.cpp" />
-    <ClCompile Include="ql\exchangerate.cpp" />
     <ClCompile Include="ql\exercise.cpp" />
-    <ClCompile Include="ql\rebatedexercise.cpp" />
-    <ClCompile Include="ql\index.cpp" />
     <ClCompile Include="ql\interestrate.cpp" />
-    <ClCompile Include="ql\money.cpp" />
-    <ClCompile Include="ql\position.cpp" />
-    <ClCompile Include="ql\prices.cpp" />
     <ClCompile Include="ql\settings.cpp" />
-    <ClCompile Include="ql\stochasticprocess.cpp" />
     <ClCompile Include="ql\termstructure.cpp" />
-    <ClCompile Include="ql\timegrid.cpp" />
     <ClCompile Include="ql\time\asx.cpp">
       <Filter>time</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\fixedlocalvolsurface.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\gridmodellocalvolsurface.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\termstructures\volatility\equityfx\hestonblackvolsurface.cpp">
-      <Filter>termstructures\volatility\equityfx</Filter>
     </ClCompile>
     <ClCompile Include="ql\patterns\observable.cpp">
       <Filter>patterns</Filter>
@@ -1219,23 +326,9 @@
     <ClCompile Include="ql\time\daycounters\actual365fixed.cpp">
       <Filter>time\daycounters</Filter>
     </ClCompile>
-    <ClCompile Include="ql\quotes\eurodollarfuturesquote.cpp">
-      <Filter>quotes</Filter>
+    <ClCompile Include="ql\time\calendars\brazil.cpp">
+      <Filter>time\calendars</Filter>
     </ClCompile>
-    <ClCompile Include="ql\quotes\forwardswapquote.cpp">
-      <Filter>quotes</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\quotes\forwardvaluequote.cpp">
-      <Filter>quotes</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\quotes\futuresconvadjustmentquote.cpp">
-      <Filter>quotes</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\quotes\impliedstddevquote.cpp">
-      <Filter>quotes</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\quotes\lastfixingquote.cpp">
-      <Filter>quotes</Filter>
-    </ClCompile>
+    <ClCompile Include="ql\errors.cpp" />
   </ItemGroup>
 </Project>
